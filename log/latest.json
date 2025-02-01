@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "lastUpdated": "2025-02-01T10:03:28.308Z"
+  },
+  "logs": [
+    {
+      "timestamp": "2025-02-01T10:01:47.019Z",
+      "status": "success",
+      "newIP": "20.42.11.16",
+      "response": {
+        "result": {
+          "id": "152ab1feeb7d81402cc14076fc6ec90c",
+          "zone_id": "370e41c1c18db59791b1f14991056c7c",
+          "zone_name": "stardot.io",
+          "name": "profile.stardot.io",
+          "type": "A",
+          "content": "20.42.11.16",
+          "proxiable": true,
+          "proxied": true,
+          "ttl": 1,
+          "settings": {},
+          "meta": {
+            "auto_added": false,
+            "managed_by_apps": false,
+            "managed_by_argo_tunnel": false
+          },
+          "comment": null,
+          "tags": [],
+          "created_on": "2025-01-27T23:58:10.80979Z",
+          "modified_on": "2025-02-01T09:34:49.241016Z"
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "timestamp": "2025-02-01T10:03:28.308Z",
+      "status": "success",
+      "newIP": "20.42.11.16",
+      "response": {
+        "result": {
+          "id": "152ab1feeb7d81402cc14076fc6ec90c",
+          "zone_id": "370e41c1c18db59791b1f14991056c7c",
+          "zone_name": "stardot.io",
+          "name": "profile.stardot.io",
+          "type": "A",
+          "content": "20.42.11.16",
+          "proxiable": true,
+          "proxied": true,
+          "ttl": 1,
+          "settings": {},
+          "meta": {
+            "auto_added": false,
+            "managed_by_apps": false,
+            "managed_by_argo_tunnel": false
+          },
+          "comment": null,
+          "tags": [],
+          "created_on": "2025-01-27T23:58:10.80979Z",
+          "modified_on": "2025-02-01T09:34:49.241016Z"
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    }
+  ]
+}
