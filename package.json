@@ -4,7 +4,8 @@
   "description": "CloudflareのDNSをAPIを通して自動化・簡易化するツール",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "v4": "node v4.js",
+    "v6": "node v6.js"
   },
   "keywords": [],
   "author": "",
