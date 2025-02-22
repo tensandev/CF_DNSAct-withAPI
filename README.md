@@ -1,97 +1,42 @@
-# CF_DNSAct-withAPI
+## **Cloudflare DNS 自動更新ツール** 🚀  
 
-CF_DNSAct-withAPI は、Cloudflare の API を使用して DNS レコードを自動的に更新し、簡易化するためのツールです。このツールは、現在の IP アドレスを定期的に監視し、変更があった場合に指定された DNS レコードを更新します。
+IPv4 / IPv6 の変更を検知し、CloudflareのDNSを自動更新するシンプルなツールです。  
 
-## 特徴
-- **Cloudflare API を活用**
-  - ゾーン ID および API トークンを使用して DNS レコードを自動的に更新。
-- **IP アドレスの監視**
-  - デフォルトで 1 分ごとに IP アドレスをチェック。
-- **レコード ID の自動取得**
-  - 更新対象の DNS レコードの ID を自動で取得します。
-- **ログ機能**
-  - DNS 更新状況やエラー情報をログファイルに記録。
+### **✨ 特徴**  
+✅ **IPv4 / IPv6 対応（A / AAAA レコード）**  
+✅ **IP変更時のみCloudflareを更新**  
+✅ **シンプルなログ管理（JSON）**  
 
-## 必要な前提条件
-このツールを利用するためには、以下の情報を準備する必要があります。
+### **🚀 使い方**  
 
-1. **Cloudflare のゾーン ID**
-   - Cloudflare ダッシュボードから取得可能。
-2. **Cloudflare の API トークン**
-   - 必要な権限: Zone > DNS 編集権限。
-3. **更新対象の A レコード名**
-   - 例: `subdomain.example.com` の形式。
-
-## 使い方
-
-### 1. セットアップ
-以下のコマンドを使用して、必要なパッケージをインストールします。
-
-```bash
+#### **1️⃣ インストール**  
+```sh
 npm install
 ```
 
-### 2. 必要な環境変数の設定
-`ZONE_ID`、`API_TOKEN`、`DNS_NAME` などの値をコード内で直接設定するか、環境変数として定義してください。
-
-#### 設定項目
-- **`ZONE_ID`**: Cloudflare のゾーン ID。
-- **`API_TOKEN`**: Cloudflare API トークン。
-- **`DNS_NAME`**: 更新対象の A レコード名。
-- **`DNS_PROXIED`**: Cloudflare プロキシ設定 (true または false)。
-- **`DNS_TTL`**: DNS レコードの TTL (秒単位)。
-
-### 3. 実行
-以下のコマンドでアプリケーションを起動します。
-
-```bash
-npm run start
-```
-
-サーバーが起動すると、以下のようなメッセージが表示されます。
-
-```
-サーバーが起動しました: http://localhost:3000
-現在のIPアドレス: <取得されたIPアドレス>
-```
-
-### 4. 動作
-- 起動時に現在の IP アドレスを取得し、DNS レコードを更新します。
-- その後、1 分ごとに IP アドレスの変更を監視します。
-- IP アドレスが変更された場合、Cloudflare の DNS レコードを自動更新します。
-
-### 5. ログ機能
-更新やエラーの情報は `log/latest.json` に記録されます。ログファイルが存在しない場合、自動で作成されます。
-
-## ログの構成
-ログファイルは以下の構造で記録されます。
-
+#### **2️⃣ 設定**  
+`config.json` を作成：
 ```json
 {
-  "metadata": {
-    "lastUpdated": "2025-02-01T12:00:00.000Z"
-  },
-  "logs": [
-    {
-      "timestamp": "2025-02-01T12:00:00.000Z",
-      "status": "success",
-      "newIP": "192.0.2.1",
-      "response": { ... }
-    },
-    {
-      "timestamp": "2025-02-01T12:05:00.000Z",
-      "status": "failure",
-      "newIP": "192.0.2.2",
-      "errors": [ ... ]
-    }
-  ]
+  "ZONE_ID": "your-zone-id",
+  "API_TOKEN": "your-api-token",
+  "DNS_NAME": "your.domain.com"
 }
 ```
 
-## 注意点
-- このツールは、停止するまで永続的に動作します。
-- `API_TOKEN` などの機密情報を安全に管理してください。
-- 過剰な API 呼び出しを防ぐため、監視間隔 (`setInterval` の値) を適切に設定してください。
+#### **3️⃣ 実行**  
+```sh
+node index.js
+```
 
-## ライセンス
-このプロジェクトは [MIT ライセンス](LICENSE) のもとで提供されています。
+（DockerもOK ✅）  
+```sh
+docker build -t cloudflare-dns-updater .
+docker run -d cloudflare-dns-updater
+```
+
+### **📜 ログ管理**  
+更新履歴は `log/latest.json` に保存。  
+
+### **⏳ 更新間隔**  
+1分ごとにチェック。IP変更時のみCloudflareを更新。  
