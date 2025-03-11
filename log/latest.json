@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2025-03-11T11:41:23.987Z"
+    "lastUpdated": "2025-03-11T12:10:53.429Z"
   },
   "logs": [
     {
@@ -307,6 +307,192 @@
         "errors": [],
         "messages": []
       }
+    },
+    {
+      "timestamp": "2025-03-11T12:05:55.555Z",
+      "level": "INFO",
+      "message": "サーバーが起動しました: http://localhost:3000"
+    },
+    {
+      "timestamp": "2025-03-11T12:05:56.621Z",
+      "level": "WARN",
+      "message": "Aレコードが見つからなかったため、作成を試みます (name: hello.stardot.io)。",
+      "type": "A",
+      "dnsName": "hello.stardot.io"
+    },
+    {
+      "timestamp": "2025-03-11T12:05:56.907Z",
+      "level": "INFO",
+      "message": "Aレコードを 115.37.88.35 に作成成功",
+      "type": "A",
+      "ipAddress": "115.37.88.35",
+      "response": {
+        "result": {
+          "id": "1c9f97f057374110bcb6b9b8ee91410d",
+          "name": "hello.stardot.io",
+          "type": "A",
+          "content": "115.37.88.35",
+          "proxiable": true,
+          "proxied": true,
+          "ttl": 1,
+          "settings": {},
+          "meta": {},
+          "comment": null,
+          "tags": [],
+          "created_on": "2025-03-11T12:05:56.823705Z",
+          "modified_on": "2025-03-11T12:05:56.823705Z"
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "timestamp": "2025-03-11T12:05:57.195Z",
+      "level": "WARN",
+      "message": "AAAAレコードが見つからなかったため、作成を試みます (name: hello.stardot.io)。",
+      "type": "AAAA",
+      "dnsName": "hello.stardot.io"
+    },
+    {
+      "timestamp": "2025-03-11T12:05:57.503Z",
+      "level": "INFO",
+      "message": "AAAAレコードを 2402:6b00:fe10:7700:5116:f10d:817:bacd に作成成功",
+      "type": "AAAA",
+      "ipAddress": "2402:6b00:fe10:7700:5116:f10d:817:bacd",
+      "response": {
+        "result": {
+          "id": "76b0fd9a115d8b6f71ff4202b06a7909",
+          "name": "hello.stardot.io",
+          "type": "AAAA",
+          "content": "2402:6b00:fe10:7700:5116:f10d:817:bacd",
+          "proxiable": true,
+          "proxied": true,
+          "ttl": 1,
+          "settings": {},
+          "meta": {},
+          "comment": null,
+          "tags": [],
+          "created_on": "2025-03-11T12:05:57.403747Z",
+          "modified_on": "2025-03-11T12:05:57.403747Z"
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "timestamp": "2025-03-11T12:06:52.074Z",
+      "level": "INFO",
+      "message": "サーバーが起動しました: http://localhost:3000"
+    },
+    {
+      "timestamp": "2025-03-11T12:06:53.130Z",
+      "level": "WARN",
+      "message": "Aレコードが見つからなかったため、作成を試みます (name: stardot.io)。",
+      "type": "A",
+      "dnsName": "stardot.io"
+    },
+    {
+      "timestamp": "2025-03-11T12:06:53.442Z",
+      "level": "INFO",
+      "message": "Aレコードを 115.37.88.35 に作成成功",
+      "type": "A",
+      "ipAddress": "115.37.88.35",
+      "response": {
+        "result": {
+          "id": "4a46dab531f3feecd9ba3a362a55bd77",
+          "name": "stardot.io",
+          "type": "A",
+          "content": "115.37.88.35",
+          "proxiable": true,
+          "proxied": true,
+          "ttl": 1,
+          "settings": {},
+          "meta": {},
+          "comment": null,
+          "tags": [],
+          "created_on": "2025-03-11T12:06:53.333362Z",
+          "modified_on": "2025-03-11T12:06:53.333362Z"
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "timestamp": "2025-03-11T12:06:53.781Z",
+      "level": "WARN",
+      "message": "AAAAレコードが見つからなかったため、作成を試みます (name: stardot.io)。",
+      "type": "AAAA",
+      "dnsName": "stardot.io"
+    },
+    {
+      "timestamp": "2025-03-11T12:06:54.074Z",
+      "level": "INFO",
+      "message": "AAAAレコードを 2402:6b00:fe10:7700:5116:f10d:817:bacd に作成成功",
+      "type": "AAAA",
+      "ipAddress": "2402:6b00:fe10:7700:5116:f10d:817:bacd",
+      "response": {
+        "result": {
+          "id": "8fee941064d94ed0f49b822984aeb1c4",
+          "name": "stardot.io",
+          "type": "AAAA",
+          "content": "2402:6b00:fe10:7700:5116:f10d:817:bacd",
+          "proxiable": true,
+          "proxied": true,
+          "ttl": 1,
+          "settings": {},
+          "meta": {},
+          "comment": null,
+          "tags": [],
+          "created_on": "2025-03-11T12:06:53.984422Z",
+          "modified_on": "2025-03-11T12:06:53.984422Z"
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "timestamp": "2025-03-11T12:07:52.995Z",
+      "level": "INFO",
+      "message": "IPv4アドレスに変更はありません"
+    },
+    {
+      "timestamp": "2025-03-11T12:07:53.408Z",
+      "level": "INFO",
+      "message": "IPv6アドレスに変更はありません"
+    },
+    {
+      "timestamp": "2025-03-11T12:08:52.989Z",
+      "level": "INFO",
+      "message": "IPv4アドレスに変更はありません"
+    },
+    {
+      "timestamp": "2025-03-11T12:08:53.368Z",
+      "level": "INFO",
+      "message": "IPv6アドレスに変更はありません"
+    },
+    {
+      "timestamp": "2025-03-11T12:09:53.116Z",
+      "level": "INFO",
+      "message": "IPv4アドレスに変更はありません"
+    },
+    {
+      "timestamp": "2025-03-11T12:09:53.468Z",
+      "level": "INFO",
+      "message": "IPv6アドレスに変更はありません"
+    },
+    {
+      "timestamp": "2025-03-11T12:10:52.994Z",
+      "level": "INFO",
+      "message": "IPv4アドレスに変更はありません"
+    },
+    {
+      "timestamp": "2025-03-11T12:10:53.429Z",
+      "level": "INFO",
+      "message": "IPv6アドレスに変更はありません"
     }
   ]
 }
