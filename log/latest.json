@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2025-03-10T16:36:35.134Z"
+    "lastUpdated": "2025-03-11T09:56:16.184Z"
   },
   "logs": [
     {
@@ -94,6 +94,65 @@
     {
       "timestamp": "2025-03-10T16:36:35.134Z",
       "status": "success",
+      "type": "AAAA",
+      "newIP": "2402:6b00:fe10:7700:5116:f10d:817:bacd",
+      "response": {
+        "result": {
+          "id": "84e4c2049e489c5b0c65f038dceee893",
+          "name": "stardot.io",
+          "type": "AAAA",
+          "content": "2402:6b00:fe10:7700:5116:f10d:817:bacd",
+          "proxiable": true,
+          "proxied": true,
+          "ttl": 1,
+          "settings": {},
+          "meta": {},
+          "comment": null,
+          "tags": [],
+          "created_on": "2025-02-22T17:47:42.774285Z",
+          "modified_on": "2025-03-10T16:36:35.041471Z"
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "level": "INFO",
+      "timestamp": "2025-03-11T09:56:14.332Z",
+      "message": "サーバーが起動しました: http://localhost:3000"
+    },
+    {
+      "level": "INFO",
+      "timestamp": "2025-03-11T09:56:15.301Z",
+      "message": "Aレコードを 115.37.88.35 に更新成功",
+      "type": "A",
+      "newIP": "115.37.88.35",
+      "response": {
+        "result": {
+          "id": "46d5af46bb48908cf85b784ecb342937",
+          "name": "stardot.io",
+          "type": "A",
+          "content": "115.37.88.35",
+          "proxiable": true,
+          "proxied": true,
+          "ttl": 1,
+          "settings": {},
+          "meta": {},
+          "comment": null,
+          "tags": [],
+          "created_on": "2024-10-05T06:40:45.949269Z",
+          "modified_on": "2025-03-10T16:32:09.928355Z"
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "level": "INFO",
+      "timestamp": "2025-03-11T09:56:16.184Z",
+      "message": "AAAAレコードを 2402:6b00:fe10:7700:5116:f10d:817:bacd に更新成功",
       "type": "AAAA",
       "newIP": "2402:6b00:fe10:7700:5116:f10d:817:bacd",
       "response": {
